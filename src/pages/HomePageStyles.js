@@ -76,10 +76,11 @@ const styles = StyleSheet.create( {
         fontWeight: 'bold',
         fontSize: 40,
         marginBottom: 2,
+        color: 'white'
     },
     searchBoxField: {
         width: 300,
-        backgroundColor: '#7C8B95',
+        backgroundColor: 'rgba(255,255,255,0.6)',
         borderRadius: 50,
         paddingHorizontal: 20,   
     },
@@ -87,7 +88,41 @@ const styles = StyleSheet.create( {
         alignItems: 'center',
     },
     MenuIcon: {
-        justifyContent: 'flex-start',
+        marginLeft: 10,
+        marginTop: 20,
+    },
+    PopularIcon: {
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 90,
+    },
+    TrendingIcon: {
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 90,
+    },
+    RecentIcon: {
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 90,
+    },
+    margicIcon: {
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 90,
+    },
+    pop: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textcolor: {
+        color: 'white',
+        paddingTop: 10
+        
     }
   
 

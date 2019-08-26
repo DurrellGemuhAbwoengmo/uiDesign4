@@ -5,11 +5,11 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const HomePage = () => {
    // const {mainView} = styles;
-const MenuIcon = <Icon name = "currency-eth" size = {30} color="black" marginLeft= {20} marginTop = {20}  />;
-const RecentIcon = <Icon name = "clock-outline" size = {60} color="black" marginLeft= {20} marginTop = {20} backgroundColor = "white" />;
-const margicIcon = <Icon name = "star-outline" size = {60} color="black" marginLeft= {20} marginTop = {20}  />;
-const TrendingIcon = <Icon name = "trending-up" size = {60} color="black" marginLeft= {20} marginTop = {20}  />;
-const PopularIcon = <Icon name = "podcast" size = {60} color="black" marginLeft= {20} marginTop = {20}  />;
+const MenuIcon = <Icon name = "currency-eth" size = {40} color="white" marginLeft= {20} marginTop = {20}  />;
+const RecentIcon = <Icon name = "clock-outline" size = {60} color="orange" marginLeft= {20} marginTop = {20} />;
+const margicIcon = <Icon name = "star-outline" size = {60} color="orange" marginLeft= {20} marginTop = {20}  />;
+const TrendingIcon = <Icon name = "trending-up" size = {60} color="orange" marginLeft= {20} marginTop = {20}  />;
+const PopularIcon = <Icon name = "podcast" size = {60} color="orange" marginLeft= {20} marginTop = {20}  />;
 const Iconuc = <Icon name = "dots-horizontal" size = {60} color="white" marginLeft= {20} marginTop = {20}  />;
 const Iconlc = <Icon name = "dots-horizontal" size = {60} color="orange" marginLeft= {20} marginTop = {20}  />;
 
@@ -26,47 +26,55 @@ const Iconlc = <Icon name = "dots-horizontal" size = {60} color="orange" marginL
                         <Text style = {styles.pageTitleText}>
                             Browse
                         </Text>
-                        <Text>
-                            Find podcast the at will suit your interest
+                        <Text style = {{color: 'white'}}>
+                            Find podcast that will suit your interest
                         </Text>
                     </View>
                     <View style = {styles.searchBox}>
                        <TextInput style = {styles.searchBoxField}
                        placeholder = "Type Keyword" 
-                       placeholderTextColor = "#BABDB6"
+                       placeholderTextColor = "rgba(255,255,255,0.6)"
                        />
                     </View>
                     <View style = {styles.category}>
-                        <View>
-                            <Text>
-                                {PopularIcon}
-                            </Text>
-                            <Text>
-                                Popular
-                            </Text>
-                        </View>
-                        <View>
-                            <Text>
-                            {TrendingIcon}
-                            </Text>
-                            <Text>
-                                Trending
+                        <View style = {styles.pop}>
+                            <View style = {styles.PopularIcon}>
+                                <Text>
+                                    {PopularIcon}
+                                </Text>
+                            </View>
+                            <Text style = {styles.textcolor}>
+                                    Popular
                             </Text>
                         </View>
-                        <View>
-                            <Text>
-                                {RecentIcon}
-                            </Text>
-                            <Text>
-                                Recent
+                        <View style = {styles.pop}>
+                            <View style = {styles.TrendingIcon}>
+                                <Text>
+                                {TrendingIcon}
+                                </Text>
+                            </View>
+                            <Text style = {styles.textcolor}>
+                                    Trending
                             </Text>
                         </View>
-                        <View>
-                            <Text>
-                                {margicIcon}
+                        <View style = {styles.pop}>
+                            <View style = {styles.RecentIcon}>
+                                <Text>
+                                    {RecentIcon}
+                                </Text>
+                            </View>
+                            <Text style = {styles.textcolor}>
+                                    Recent
                             </Text>
-                            <Text>
-                                margic
+                        </View>
+                        <View style = {styles.pop}>
+                            <View style = {styles.margicIcon}>
+                                <Text>
+                                    {margicIcon}
+                                </Text>
+                            </View>
+                            <Text style = {styles.textcolor}>
+                                    margic
                             </Text>
                         </View>
                         
