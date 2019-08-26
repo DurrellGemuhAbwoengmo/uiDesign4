@@ -33,7 +33,7 @@ const Iconlc = <Icon name = "dots-horizontal" size = {60} color="orange" marginL
                     <View style = {styles.searchBox}>
                        <TextInput style = {styles.searchBoxField}
                        placeholder = "Type Keyword" 
-                       placeholderTextColor = "rgba(255,255,255,0.6)"
+                       placeholderTextColor = "grey"
                        />
                     </View>
                     <View style = {styles.category}>
